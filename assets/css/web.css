@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+  padding: 0; margin: 0; box-sizing: border-box;
+}
+
+body{
+  font-family: 'Epilogue', sans-serif;
+  font-size: 1rem;
+  color: #626262;
+  background: #f9f9f9;
+}
+
+a{
+  text-decoration: none;
+  color: #626262;
+}
+
+.a-nav{
+  color: #626262;
+}
+
+.btn-link-10{
+  background: #CA4949;
+  color: #fff;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  position: relative;
+  min-width: 15rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 6px 14px #bbb;
+}
+
+.btn-link-10 .btn-circle{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: .85rem #fff solid;
+  border-radius: 2rem;
+  right: 4px;
+  top: 4px;
+}
+
+header{
+  border-bottom: 1px #ccc solid;
+  padding: .5rem 1rem;
+}
+
+.container{
+  padding: 1rem;
+}
+
+header .navbar nav{
+  display: none;
+}
+
+header .navbar{
+  display: flex;
+  justify-content: center;
+}
+
+header .navbar .logo{
+  width: 140px;
+}
+
+.hero{
+  background: #fff;
+  padding-bottom: 2rem;
+}
+
+.img-responsive{
+  max-width: 100%;
+}
+
+h1{
+  color: #CA4949;
+  font-size: 2rem;
+}
+
+h1, p, .txt-span{
+  margin-top: 1.5rem;
+  line-height: 124%;
+}
+
+.c-left p{
+  font-size: 1.5rem;
+}
+
+p, .txt-span{
+  line-height: auto;
+  color: #919191;
+  font-weight: 200;
+}
+
+.txt-span{
+  display: block;
+  max-width: 12rem;
+  font-weight: 200;
+  color: #CA4949;
+}
+
+.section_1{
+  width: 100%;
+  background: url('../medias/section_1_bg.jpg') repeat-y center center;
+}
+
+.section_1 .container{
+  padding: 2rem 1rem;
+  border: 1px red solid;
+}
+
+.section_1 .container h2{
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.section_1 .container p{
+  text-align: center;
+  margin: 1rem 0;
+}
+
+@media(min-width: 40rem){
+  
+  .col-2{
+    flex-grow: 1;
+    gap: 2rem;
+  }
+  
+  .c-left{
+    max-width: 487px;
+    border: 1px red solid;
+    float: right;
+  }
+  .a-nav{
+    color: #CA4949;
+    font-size: .9rem;
+    font-weight: bold;
+  }
+  
+  .navbar .logo{
+    min-width: 200px;
+  }
+
+  .navbar, .container{
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+  }
+
+  header .navbar nav{
+    display: inherit;
+    gap:1rem; 
+  }
+
+  .hero .container{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+  }
+
+  .hero{
+    padding-top: 2rem;
+  }
+}
